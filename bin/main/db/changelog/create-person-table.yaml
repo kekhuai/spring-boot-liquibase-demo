@@ -1,0 +1,25 @@
+databaseChangeLog:
+  -
+    changeSet:
+      id: create person table
+      author: Bomb
+      changes:
+        -
+          createTable:
+            columns:
+              -
+                column:
+                  name: ID
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              -
+                column:
+                  name: FIRST_NAME
+                  type: VARCHAR(64)
+              -
+                column:
+                  name: LAST_NAME
+                  type: VARCHAR(64)
+            tableName: PERSON

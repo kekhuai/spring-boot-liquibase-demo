@@ -1,0 +1,9 @@
+databaseChangeLog:
+  -
+    include:
+      file: add-databasechangelog-primarykey.yaml
+      relativeToChangelogFile: true
+  -
+    include:
+      file: create-person-table.yaml
+      relativeToChangelogFile: true

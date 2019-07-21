@@ -1,0 +1,10 @@
+databaseChangeLog:
+  -
+    changeSet:
+      id: add primary key to databasechangelog table
+      author: Bomb
+      changes:
+        -
+          addPrimaryKey:
+            columnNames: ID, AUTHOR, FILENAME
+            tableName: DATABASECHANGELOG
